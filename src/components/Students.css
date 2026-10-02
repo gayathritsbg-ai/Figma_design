@@ -1,0 +1,292 @@
+/* =========================
+   STUDENTS PAGE
+========================= */
+
+.students {
+  width: 100%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 28px;
+}
+
+.students-header h1 {
+  font-size: 25px;
+  font-weight: 700;
+
+  margin-bottom: 7px;
+}
+
+.students-header p {
+  font-size: 18px;
+  color: #222;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.student-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.view-toggle {
+  display: flex;
+
+  background: #ddd;
+
+  padding: 5px;
+
+  border-radius: 6px;
+}
+
+.view-toggle button {
+  border: none;
+
+  background: transparent;
+
+  padding: 8px 17px;
+
+  font-size: 13px;
+
+  border-radius: 5px;
+}
+
+.view-toggle .view-active {
+  background: white;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+.add-student-btn {
+  border: none;
+
+  background: #3047f5;
+
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+
+.add-student-btn:hover {
+  background: #2639d8;
+}
+
+
+/* =========================
+   STUDENT GRID
+========================= */
+
+.students-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+}
+
+
+/* =========================
+   STUDENT CARD
+========================= */
+
+.student-card {
+  background: white;
+
+  border: 1px solid #e0e0e0;
+
+  border-radius: 3px;
+
+  padding: 16px;
+
+  min-height: 177px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+  position: relative;
+}
+
+
+/* =========================
+   TOP CONTENT
+========================= */
+
+.student-top {
+  display: flex;
+
+  align-items: flex-start;
+
+  position: relative;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.student-avatar {
+  width: 29px;
+  height: 29px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #3047f5;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+
+  margin-right: 12px;
+}
+
+
+/* =========================
+   STUDENT INFO
+========================= */
+
+.student-info {
+  flex: 1;
+}
+
+.student-info h3 {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  margin-top: 4px;
+
+  margin-bottom: 7px;
+}
+
+.student-info p {
+  font-size: 16px;
+
+  line-height: 19px;
+
+  color: #333;
+}
+
+.student-info .location {
+  text-align: center;
+
+  margin-right: 45px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.student-status {
+  position: absolute;
+
+  right: 8px;
+  top: 5px;
+
+  padding: 4px 15px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+}
+
+.student-status.active {
+  background: #d2f7d0;
+
+  color: #238c23;
+}
+
+.student-status.inactive {
+  background: #ff9e9e;
+
+  color: #e94d4d;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.student-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 12px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+
+  width: 80px;
+
+  height: 20px;
+
+  border-radius: 5px;
+
+  color: white;
+
+  font-size: 10px;
+}
+
+.edit-btn {
+  background: #3047f5;
+}
+
+.delete-btn {
+  background: #ff7777;
+}
+
+.edit-btn:hover {
+  background: #2639d8;
+}
+
+.delete-btn:hover {
+  background: #ff5d5d;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+  .students-header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

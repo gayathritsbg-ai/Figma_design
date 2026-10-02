@@ -1,0 +1,117 @@
+.attendance h2 {
+  font-size: 16px;
+}
+
+.attendance-subtitle {
+  font-size: 10px;
+  color: #555;
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+
+.attendance-controls {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.attendance-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.attendance-field label {
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.attendance-field input,
+.attendance-field select {
+  width: 150px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0 7px;
+  font-size: 8px;
+}
+
+.save-attendance-btn {
+  height: 28px;
+  border: none;
+  background: #394fe8;
+  color: white;
+  padding: 0 18px;
+  border-radius: 3px;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.attendance-stats {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.attendance-stat {
+  width: 150px;
+  height: 55px;
+  background: white;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px;
+}
+
+.attendance-stat p {
+  font-size: 8px;
+  color: #666;
+}
+
+.attendance-stat h3 {
+  font-size: 14px;
+}
+
+.attendance-list {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.attendance-list h3 {
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.attendance-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 7px;
+  margin-bottom: 5px;
+  font-size: 8px;
+}
+
+.present-btn {
+  border: none;
+  background: #55c84e;
+  color: white;
+  padding: 4px 9px;
+  font-size: 7px;
+  cursor: pointer;
+}
+
+.absent-btn {
+  border: 1px solid #bbb;
+  background: white;
+  padding: 4px 9px;
+  font-size: 7px;
+  margin-left: 4px;
+  cursor: pointer;
+}

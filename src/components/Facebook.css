@@ -1,0 +1,68 @@
+.facebook {
+  width: 90%;
+  height: 56px;
+  margin: 20px auto;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 6px #bbb;
+}
+
+.facebook-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1877f2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.facebook-search {
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+.facebook-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.facebook-menu {
+  width: 105px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 22px;
+}
+
+.facebook-menu.active {
+  color: #1877f2;
+  border-bottom: 4px solid #1877f2;
+}
+
+.facebook-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: #666;
+  font-size: 18px;
+}

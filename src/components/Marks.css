@@ -1,0 +1,276 @@
+/* =========================
+   MARKS PAGE
+========================= */
+
+.marks {
+  width: 100%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.marks-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 28px;
+}
+
+.marks-header h1 {
+  font-size: 25px;
+
+  font-weight: 700;
+
+  margin-bottom: 6px;
+}
+
+.marks-header p {
+  font-size: 18px;
+
+  color: #222;
+}
+
+
+/* =========================
+   ADD MARKS BUTTON
+========================= */
+
+.add-marks-btn {
+  width: 163px;
+  height: 28px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #3047f5;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  margin-top: 4px;
+}
+
+.add-marks-btn:hover {
+  background: #263bd8;
+}
+
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.marks-stats {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 32px;
+}
+
+.marks-stat {
+  height: 68px;
+
+  background: white;
+
+  border: 1px solid #e0e0e0;
+
+  border-radius: 5px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 8px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   STAT ICONS
+========================= */
+
+.marks-stat-icon {
+  width: 37px;
+  height: 37px;
+
+  border-radius: 5px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 10px;
+
+  font-size: 19px;
+}
+
+.records-icon {
+  background: #3047f5;
+
+  color: white;
+}
+
+.highest-icon {
+  background: #ffc52e;
+
+  color: #333;
+}
+
+.pass-icon {
+  background: #bd48dc;
+
+  color: white;
+}
+
+
+/* =========================
+   STAT TEXT
+========================= */
+
+.marks-stat p {
+  font-size: 10px;
+
+  color: #333;
+
+  margin-bottom: 4px;
+}
+
+.marks-stat h3 {
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.marks-table-container {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.marks-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background: white;
+
+  border: 1px solid #555;
+}
+
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+.marks-table th {
+  height: 41px;
+
+  padding: 8px 9px;
+
+  border-bottom: 1px solid #555;
+
+  text-align: left;
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  white-space: nowrap;
+}
+
+
+/* =========================
+   TABLE BODY
+========================= */
+
+.marks-table td {
+  height: 41px;
+
+  padding: 8px 7px;
+
+  border-bottom: 1px solid #555;
+
+  font-size: 12px;
+
+  color: #222;
+}
+
+.marks-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================
+   COLUMN ALIGNMENT
+========================= */
+
+.marks-table th:nth-child(1),
+.marks-table td:nth-child(1) {
+  width: 18%;
+}
+
+.marks-table th:nth-child(2),
+.marks-table td:nth-child(2) {
+  width: 16%;
+  text-align: center;
+}
+
+.marks-table th:nth-child(3),
+.marks-table td:nth-child(3) {
+  width: 22%;
+  text-align: center;
+}
+
+.marks-table th:nth-child(4),
+.marks-table td:nth-child(4) {
+  width: 12%;
+  text-align: center;
+}
+
+.marks-table th:nth-child(5),
+.marks-table td:nth-child(5) {
+  width: 15%;
+  text-align: center;
+}
+
+.marks-table th:nth-child(6),
+.marks-table td:nth-child(6) {
+  width: 17%;
+  text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+  .marks-header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .marks-stats {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,86 @@
+.youtube {
+  width: 90%;
+  height: 56px;
+  margin: 20px auto;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 6px #bbb;
+}
+
+.youtube-menu {
+  font-size: 18px;
+  margin-right: 35px;
+  color: #555;
+}
+
+.youtube-logo {
+  color: #111;
+  font-size: 23px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.youtube-logo::before {
+  content: "▶";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 23px;
+  margin-right: 8px;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.youtube-search {
+  width: 450px;
+  height: 36px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.youtube-search input {
+  flex: 1;
+  height: 36px;
+
+  padding: 0 12px;
+
+  border: 1px solid #ccc;
+  outline: none;
+
+  background: white;
+  font-size: 14px;
+}
+
+.youtube-search button {
+  width: 55px;
+  height: 36px;
+
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-search button i {
+  font-size: 14px;
+  color: #555;
+}
+
+.youtube-icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: #555;
+  font-size: 18px;
+}
